@@ -1,0 +1,20 @@
+footer{
+    width:100%;
+    background-color: black;
+    color:white;
+    padding-left: 10px;
+    
+    margin-top:500px;
+    
+ }
+ 
+ footer p{
+    text-align: justify;
+ }
+ 
+ footer li{
+    list-style: none;
+ }
+ footer li a{
+    padding-right: 0;
+ }

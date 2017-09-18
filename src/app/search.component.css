@@ -1,0 +1,50 @@
+
+#search_bar{
+  
+    text-align: center;
+    margin-bottom:20px;
+  
+}
+
+p{
+    text-align: justify;
+    line-height: 20px;
+    
+    margin:0 10px 0 10px;
+    color: #0A0A0B;
+    
+}
+h5{
+    margin:auto;
+    line-height: 20px;
+    color: #0B0A0A;
+}
+
+#title{
+    text-align:center;
+}
+
+
+img{
+   
+    margin-left:30px;
+    margin-right:30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+th{
+
+    text-align: center;
+    line-height: 20px;
+    color: #F9F5F5;
+    background-color: #000000;
+
+}
+table{
+    background-color: #F5F8F8;
+}
+table , th, td{ 
+    border: 1px solid #080707; 
+}
+

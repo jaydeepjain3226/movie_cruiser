@@ -1,0 +1,28 @@
+<div class="container">
+<div  id="search_bar">
+  <input #searchBox [(ngModel)]="moviename" (keyup.enter)="load_moviedata()" id="search"/>
+    
+    <button (click)="load_moviedata()">Search_movie</button>  
+            
+</div>
+<div class="container">
+<table *ngIf="moviedata">
+    <tr>
+      <th id="title"><h3>Title</h3></th>
+      <th><h3>Overview</h3></th>
+      <th><h3>Poster</h3></th>
+    </tr>
+    
+    <tr *ngFor="let movie of moviedata">
+      <td class="title">
+        <h5>{{movie.title}}</h5>
+      
+        <button>  <a [routerLink] = "['/movie', movie.id]" >{{movie.title}}</a></button>
+      </td>
+      <td><p>{{movie.overview}}</p></td>
+      <td id="image"><img [src]="'http://image.tmdb.org/t/p/w92' + movie.poster_path"/></td>
+    </tr>
+
+  </table>
+</div>
+</div>

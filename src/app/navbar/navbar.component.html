@@ -1,0 +1,165 @@
+
+<header>
+  <nav class="navbar navbar-default ">
+      <div>
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" 
+              data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand pull-left" href="#">Movie Cruiser</a>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse navbar-inverse" 
+          id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                  <li class="active"><a href="#">Home <span class="sr-only">(current)</span>
+                  </a></li>
+                  <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" 
+                      role="button" aria-haspopup="true" aria-expanded="false">
+                      Genre <span class="caret">
+                          </span></a>
+                      <ul class="dropdown-menu">
+                          <li><a href="#">Action</a></li>
+                          <li><a href="#">Thriller</a></li>
+                          <li><a href="#">Horror</a></li>
+                          <li role="separator" class="divider"></li>
+                          <li><a href="#">Romantic</a></li>
+                          <li role="separator" class="divider"></li>
+                          <li><a href="#">Sci-Fi</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="#">Releases</a></li>
+                  <li><a href="#">Request</a></li> 
+              </ul>
+              
+                  <div class="nav navbar-nav navbar-right">
+                      
+                     <li> <button type="button" id="login" class="btn btn-primary" 
+                      (click)="modal.show()">Login</button>
+                     </li>
+                      <app-modal #modal>
+                        <div class="app-modal-header">
+                             
+                        </div>
+
+                        <div class="app-modal-body"> 
+                             
+                                      <div class="tabbable">
+                                          <ul class="nav nav-tabs">
+                                              <li class="active"><a href="#tab1" data-toggle="tab">Login</a></li>
+                                              <li><a href="#tab2" data-toggle="tab">Sign Up</a></li>
+                                          </ul>
+                                          <div class="tab-content">
+                                              <div class="tab-pane active" id="tab1">
+                                                      <form>
+                                                          <div class="form-group">
+                                                              <label for="exampleInputUsername">Username</label>
+                                                              <input type="email" class="form-control" id="exampleInputUsername" aria-describedby="usernamehelp" placeholder="Enter Username">
+                                                          </div>
+                                                          <div class="form-group">
+                                                              <label for="exampleInputPassword1">Password</label>
+                                                              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                                          </div>
+                                                          <div class="form-check">
+                                                              <label class="form-check-label">
+                                                              <input type="checkbox" class="form-check-input">
+                                                              I accept all terms and conditions
+                                                              </label>
+                                                          </div>
+                                                          <button type="submit" class="btn btn-primary">Submit</button>
+                                                      </form>
+                                              </div><!-- end tab-pane -->
+                                              
+                                              <div class="tab-pane" id="tab2">
+                                                      <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+                                                  <fieldset>
+                                                  <!-- Text input-->
+                                                  
+                                                  <div class="form-group">
+                                                      <label class=" control-label">Username</label>  
+                                                      
+                                                      <div class="input-group">
+                                                      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                                      <input  name="user_name" placeholder="Username" class="form-control"  type="text">
+                                                      
+                                                      </div>
+                                                  </div>
+                                                  
+                                                  <!-- Text input-->
+                                                  
+                                                  <div class="form-group">
+                                                      <label class=" control-label" >Password</label> 
+                                                   
+                                                      <div class="input-group">
+                                                      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                                      <input name="user_password" placeholder="Password" class="form-control"  type="password">
+                                                      
+                                                      </div>
+                                                  </div>
+                                                  
+                                                  <!-- Text input-->
+                                                  
+                                                  <div class="form-group">
+                                                      <label class="4 control-label" >Confirm Password</label> 
+                                                      
+                                                      <div class="input-group">
+                                                      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                                      <input name="confirm_password" placeholder="Confirm Password" class="form-control"  type="password">
+                                                      
+                                                      </div>
+                                                  </div>
+                                                  
+                                                  <!-- Text input-->
+                                                          <div class="form-group">
+                                                      <label class=" control-label">E-Mail</label>  
+                                                      
+                                                      <div class="input-group">
+                                                          <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                                      <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
+                                                      
+                                                      </div>
+                                                  </div>
+                                                  
+                                                  
+                                                  <!-- Text input-->
+                                                  
+                                                           
+                                                  <!-- Select Basic -->
+                                                  <div class="form-group">
+                                                          <label class=" control-label"></label>
+                                                          <br>
+                                      
+                                                            <button type="submit" class="btn btn-warning" >
+                                                                SUBMIT 
+                                                                <span class="glyphicon glyphicon-send"></span>
+                                                                </button>
+                                                          
+                                                  </div>
+                              
+                                                  
+                                                  </fieldset>
+                                                  </form>
+                                             
+                                              </div>
+                                          </div>
+                                      </div>    
+                                  
+                        </div>       
+                              
+                        <div class="app-modal-footer">
+                          <button type="button" class="btn btn-default" 
+                          (click)="modal.hide()">Close</button>
+                          
+                        </div>
+                      </app-modal>       
+              </div>                       
+          </div> <!-- /.navbar-collapse -->
+      </div> <!-- /end of div below nav -->
+  </nav>
+</header> <!-- end of header -->
